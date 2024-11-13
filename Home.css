@@ -1,0 +1,101 @@
+/* Container for the entire home page */
+* {
+  background-color: red;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Spacing between sections */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Custom font for the entire page */
+}
+
+/* Base styling for all sections */
+.section {
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  color: red;
+}
+
+/* Hover effect on sections */
+.section:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* About Us section styling */
+.about-section {
+  background-image: linear-gradient(135deg, #007bff 30%, #0056b3 100%); /* Gradient background */
+  color: #f1f1f1; /* Light gray text */
+  font-style: italic; /* Italic font style */
+  border: 2px solid #003580; /* Dark blue border */
+}
+
+/* Medicines section styling */
+.medicines-section {
+  background-image: linear-gradient(135deg, #28a745 30%, #155724 100%); /* Gradient background */
+  color: #ffffff; /* White text */
+  font-weight: bold; /* Bold text */
+  letter-spacing: 1px; /* Spacing between letters */
+  border-left: 5px solid #155724; /* Bold border on the left */
+}
+
+/* Pharmacists section styling */
+.pharmacists-section {
+  background-color: #ffeb3b; /* Yellow background */
+  color: #2c2c2c; /* Dark text for contrast */
+  font-family: 'Georgia', serif; /* Different font */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  border-radius: 25px; /* Rounded corners */
+}
+
+/* Orders section styling */
+.orders-section {
+  background: radial-gradient(circle, #17a2b8 40%, #0d6efd 100%); /* Radial gradient background */
+  color: #f0f0f0; /* Light text */
+  font-size: 1.3em; /* Larger font size */
+  font-family: 'Courier New', monospace; /* Monospace font */
+  border: 3px dashed #0c5460; /* Dashed border */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+/* Billing section styling */
+.billing-section {
+  background-color: #dc3545; /* Red background */
+  color: red; /* White text */
+  letter-spacing: 1px; /* Spaced-out letters for a distinctive look */
+}
+
+/* Headings styling */
+.section h2 {
+  font-size: 2em; /* Larger headings */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make headings all uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+}
+
+/* Paragraphs styling */
+.section p {
+  font-size: 1em; /* Regular paragraph size */
+  line-height: 1.6; /* Increased line spacing for readability */
+  max-width: 800px; /* Limit the paragraph width for better readability */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+      padding: 30px; /* Smaller padding on mobile */
+  }
+
+  .section h2 {
+      font-size: 1.5em; /* Smaller headings on mobile */
+  }
+
+  .section p {
+      font-size: 0.9em; /* Slightly smaller paragraphs on mobile */
+  }
+}

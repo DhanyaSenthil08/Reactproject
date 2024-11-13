@@ -1,0 +1,34 @@
+/* Container styling */
+*{
+    background-color: aqua;
+}
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Paragraph styling */
+  .about-paragraph {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition when background changes */
+  }
+  
+  /* Button styling */
+  .change-bg-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .change-bg-btn:hover {
+    background-color: #0056b3;
+  }
+  
